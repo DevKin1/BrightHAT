@@ -98,7 +98,7 @@ body {
   right: 0;
   display: none;
   height: 100vh;
-  z-index: 999;
+  z-index: 9999;
   background-color: #ffffff2e;
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   width: 250px;
