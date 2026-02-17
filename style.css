@@ -5,7 +5,11 @@
 }
 body {
   font-size: 20px;
-  font-family: Raleway, system-ui, -apple-system, sans-serif;
+  font-family:
+    Raleway,
+    system-ui,
+    -apple-system,
+    sans-serif;
   background: #fbf1ea;
   min-height: 100vh;
 }
@@ -28,6 +32,10 @@ body {
   border: none;
   background: #fff;
   padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .login {
@@ -40,7 +48,8 @@ body {
   transform: ease-in-out 1000ms;
 }
 .hero-section {
-  /* margin-top: 50px; */
+  margin-top: 60px;
+  /* height: 100vh; */
   margin-bottom: -10px;
   position: relative;
   z-index: 1;
@@ -98,11 +107,10 @@ body {
   right: 0;
   display: none;
   height: 100vh;
-  z-index: 9999;
-  background-color: #ffffff2e;
+  z-index: 999;
+  background-color: #ffffff;
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  width: 250px;
-  backdrop-filter: blur(10px);
+  width: 100%;
   font-weight: 500;
 }
 
@@ -147,6 +155,7 @@ body {
 }
 .fa-bars {
   display: none;
+  cursor: pointer;
 }
 .fa-x {
   width: 100%;
@@ -256,7 +265,7 @@ body {
 /* -----------------------OUR PRODUCTS------------- */
 /* --------------------------------------------------------- */
 .our-product-container {
-  margin-top: 50px;
+  margin-top: 90px;
 }
 .row-container {
   display: flex;
@@ -417,9 +426,9 @@ footer h3 {
 .form-container {
   display: flex;
   justify-content: space-between;
+  border-radius: 25px;
   width: 100%;
   max-width: 400px;
-  border-radius: 8px;
   background: #fff;
   margin: 16px auto 0 auto;
 }
@@ -427,8 +436,8 @@ footer h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 7px;
-  border-radius: 7px;
+  padding: 3px;
+  border-radius: 25px;
   font-size: 70%;
   background: #ec7425;
   border: none;
@@ -493,7 +502,9 @@ input {
 
 /* Nav mobile animation */
 .nav-links {
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
 }
 
 .nav-links.active {
@@ -516,6 +527,9 @@ input {
   .nav-links,
   .login {
     display: none;
+  }
+  .fa-x {
+    cursor: pointer;
   }
   .fa-bars {
     display: block;
@@ -615,8 +629,3 @@ input {
     display: none;
   }
 }
-/* @media (max-width: 950px){
-  .phonelink{
-    display: none;
-  }
-} */
