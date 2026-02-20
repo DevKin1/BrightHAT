@@ -1,9 +1,14 @@
-function aboutShowNav() {
-  const aboutSidebar = document.querySelector('.aboutSidebar')
-  aboutSidebar.style.display = 'flex';
-}
+const menuBtn = document.querySelector(".menu-toggle");
+  const sidebar = document.querySelector(".aboutSidebar");
 
-function hideSidebar() {
-  const aboutSidebar = document.querySelector('.aboutSidebar')
-  aboutSidebar.style.display = 'none';
-}
+  function toggleMenu() {
+    menuBtn.classList.toggle("active");
+    sidebar.classList.toggle("active");
+  }
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      menuBtn.classList.remove("active");
+      sidebar.classList.remove("active");
+    }
+  });

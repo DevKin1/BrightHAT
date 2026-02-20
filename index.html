@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -27,7 +27,6 @@
   <body>
     <header>
       <nav class="nav-bar">
-        
         <div class="brighthat-logo">
           <img src="images/Brighthat Logo.png" alt="BrightHAT logo" />
         </div>
@@ -59,13 +58,15 @@
         </div>
 
         <button class="login" class="hidenav">Login/ Sign Up</button>
-        <i class="fa-solid fa-bars" onclick="showSidebar()"></i>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
 
       <nav class="sidebar">
         <div class="sidelinks">
-          <i class="fa-solid fa-x" onclick="hideSidebar()"></i>
-
           <a href="#">Home</a>
           <a href="#">Tutoring</a>
           <a href="#">Language</a>
@@ -481,5 +482,6 @@
       <img src="images/Ellipse 20.png" alt="" class="footer-shadow" />
     </footer>
     <script src="home.js"></script>
+    <div class="overlay"></div>
   </body>
 </html>
